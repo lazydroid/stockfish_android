@@ -1,3 +1,5 @@
 <resources>
 	<string name="app_name">stockfish test</string>
+	<string name="press_button_to_bind_to_service_n">Press button to bind to service.\n</string>
+	<string name="send_lines_to_the_service">Send lines to the service.</string>
 </resources>
