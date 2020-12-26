@@ -51,3 +51,4 @@ local.properties
 *.pyc
 captures
 .externalNativeBuild
+.cxx
