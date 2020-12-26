@@ -13,6 +13,7 @@ import android.os.Message;
 import android.os.Messenger;
 import android.os.RemoteException;
 import android.text.InputType;
+import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.inputmethod.EditorInfo;
@@ -37,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
 
 		mIncomingText = findViewById(R.id.incoming_text);
 		mOutGoingText = findViewById(R.id.outgoing_text);
+
+		mIncomingText.setMovementMethod(new ScrollingMovementMethod());
 
 		//setSupportActionBar(mToolbar);
 		setUpEditText(mOutGoingText);

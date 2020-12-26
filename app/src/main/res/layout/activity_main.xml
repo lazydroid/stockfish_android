@@ -19,7 +19,9 @@
 			android:id="@+id/incoming_text"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:textColor="#44DD44"
+			android:textColor="#202020"
+			android:textSize="18dp"
+			android:scrollbars="vertical"
 			android:text="@string/press_button_to_bind_to_service_n" />
 		<ImageView
 			android:layout_width="match_parent"
@@ -29,8 +31,9 @@
 			android:id="@+id/outgoing_text"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:textColor="#44DD44"
-			android:textColorHint="#44DD44"
+			android:textSize="18dp"
+			android:textColor="#202020"
+			android:textColorHint="#202020"
 			android:hint="@string/send_lines_to_the_service"/>
 	</LinearLayout>
 
