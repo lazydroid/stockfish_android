@@ -1,4 +1,4 @@
-## Stockfish 9 on Android
+## Stockfish 9, 10, 11 on Android
 
 Before trying to introduce StockFish engine into an Android application, I wanted to see if it runs well on the phone or tablet.
 
@@ -13,9 +13,11 @@ Most of the Java source code taken from the original projects, so I kept the cop
  
 Stockfish code originally used in this project originated from checkout 3ab3e55bb5faf57aec864f3bb7268601c11d72be of the official repository, somewhere between sf_8 and sf_9.
  
-I've bumped up the code to Stockfish 9, since I don't expect a lot of improvements from 10-11-12, but some complications because of variants and optimizations.
+I've bumped up the code to Stockfish 9, then 10 and, finally, 11. I do expect a few complications from version 12 because of Neural Networks introduced there.
  
 I might replace the Stockfish with a more recent version in the future, and probably archive the project, because there's not much work to be done here.
+
+Version 9, 10 and 11 are available in this repositorygit and tagged as "with_sf9", "with_sf10" and "with_sf11" accordingly.
  
 Here's a sample output for "uci" command (you have to send one before starting to use the engine) :
  

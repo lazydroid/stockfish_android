@@ -25,6 +25,7 @@
 #include "thread.h"
 #include "tt.h"
 #include "uci.h"
+#include "endgame.h"
 #include "syzygy/tbprobe.h"
 
 namespace PSQT {
@@ -92,8 +93,7 @@ void engine_wrapper::thread_loop() {
     Bitboards::init();
     Position::init();
     Bitbases::init();
-    Search::init();
-    Pawns::init();
+    Endgames::init();
     Threads.set(Options["Threads"]);
     Search::clear(); // After threads are up
 
