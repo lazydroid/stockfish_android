@@ -19,4 +19,4 @@ I might replace the Stockfish with a more recent version in the future, and prob
  
 Here's a sample output for "uci" command (you have to send one before starting to use the engine) :
  
-![Sample output](device-2020-12-28-002059.png?raw=true "Enjoy!")
+![Sample output](device-2020-12-28-004605.png?raw=true "Enjoy!")
