@@ -17,7 +17,7 @@ I've bumped up the code to Stockfish 9, then 10 and, finally, 11. I do expect a 
  
 I might replace the Stockfish with a more recent version in the future, and probably archive the project, because there's not much work to be done here.
 
-Version 9, 10 and 11 are available in this repositorygit and tagged as "with_sf9", "with_sf10" and "with_sf11" accordingly.
+Version 9, 10 and 11 are available in this repository and tagged as "with_sf9", "with_sf10" and "with_sf11" accordingly.
  
 Here's a sample output for "uci" command (you have to send one before starting to use the engine) :
  
