@@ -94,8 +94,6 @@ void engine_wrapper::thread_loop() {
     Bitbases::init();
     Search::init();
     Pawns::init();
-    Tablebases::init(Options["SyzygyPath"]);
-    TT.resize(Options["Hash"]);
     Threads.set(Options["Threads"]);
     Search::clear(); // After threads are up
 
