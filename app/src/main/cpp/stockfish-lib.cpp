@@ -94,16 +94,17 @@ void engine_wrapper::thread_loop() {
     Bitbases::init();
     Search::init();
     Pawns::init();
-    Threads.init();
     Tablebases::init(Options["SyzygyPath"]);
     TT.resize(Options["Hash"]);
+    Threads.set(Options["Threads"]);
+    Search::clear(); // After threads are up
 
     LOGV("Going into UCI::loop");
 
     char *argv = "stockfish_engine";
     UCI::loop(1, &argv);
 
-    Threads.exit();
+    Threads.set(0);
     {
         std::lock_guard<std::mutex> lk(startup_mutex);
         LOGE("engine is stopped");
@@ -129,7 +130,7 @@ protected:
             return c;
         }
         engine.output_line += c;
-        LOGV("sending line : %s to Java", engine.output_line.c_str());
+        LOGV("engine : %s", engine.output_line.c_str());
         JNIEnv *jenv;
         jint result = engine.vm->AttachCurrentThread(&jenv, NULL);
         if (result != 0) {
